@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Handrail New</title>
+<script src="handrail.js"></script>
+</head>
+
+<body onload="init()">
+
+<label for "miser">Miser</label>
+<input type="checkbox" id="miser" onchange="miser()">
+
+<p>
+<div style="float:left">
+<label for="Lrise">Lower rise:</label>
+<input type="number" id="Lrise" style="width: 70px" onchange="lower()" value="39">
+<label for="Lrun">Lower run:</label>
+<input type="number" id="Lrun" style="width: 70px" onchange="lower()" value="45">
+</div>
+
+<div style="float:left" id="upper">
+<label for="Urise">Upper rise:
+<input type="number" id="Urise" style="width: 70px" onchange="init()" value="39"></label>
+<label for="Urun">Upper run:
+<input type="number" id="Urun" style="width: 70px" onchange="init()" value="45"></label>
+</div>
+
+<label for="Turn">Turn: (degrees to the left when going up)</label>
+<input type="number" id="Turn" style="width: 70px" onchange="init()" value="90">
+<p>
+<label for="area">Standard Area:</label>
+<textbox id="area" style="border: 1px solid black;">coming soon</textbox>
+<label for="area2">Other Area:</label>
+<textbox id="area2" style="border: 1px solid black;">coming soon</textbox>
+<p>
+
+<div style="float:left">
+angle and elevation
+<p>
+<textarea id="angElev" cols=30 rows=16>coming soon</textarea>
+</div>
+<div style="float:left">
+Sides of sphere polygon
+<p>
+<textarea id="sides" cols=30 rows=16>coming soon</textarea>
+</div>
+<div>
+Bevel and Miter                  
+<p>
+<textarea id="bevMit" cols=30 rows=16>coming soon</textarea>
+</div>
+<button onclick="userInput()">Redid angle & elevation</button>
+<p>
+<div id="note" style="display: none;">
+For miser mode, note that we have the reflected half of angle and elevation that aren't shown. Also note that the bevel and miter fit together with no waste - however, you do have to remove every other pice and turn them all as group 180 degrees.
+</div>
+
+</body>
+</html>
